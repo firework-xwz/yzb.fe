@@ -1,2 +1,70 @@
-<!--pages/exam/exam.wxml-->
-<text>pages/exam/exam.wxml</text>
+
+<view scroll-x style="width: 100%" class="table">
+    <view class="table">
+          <view class="tr">
+            <view  wx:for="{{17}}" wx:key='index' class="td">
+              <view wx:if="{{index==0}}">序号</view>
+              <view wx:else>{{index}}</view>
+            </view>
+         </view>
+        <view class="tr" wx:for="{{datalist}}"  wx:key='now'>
+            <view class="td">{{item.name}}</view>
+            <van-cell-group wx:for="{{item.num}}" wx:for-item="cell" class="td">
+              <van-rate 
+                wx:if="{{item.type==0}}"
+                data-name="{{'0,'+item.name+','+cell}}"
+                value="{{ mydata[item.pos][cell] }}"
+                count="{{3}}"
+                icon="star"
+                void-icon="star-o"
+                bind:change="onChange"
+                class="td rank"
+                size="15"
+              />
+              <van-field
+                bindinput="onChange"
+                data-name="{{'0,'+item.name+','+cell}}"
+                value="{{ mydata[item.pos][cell] }}"
+                wx:else
+                clearable
+                required
+              />
+            </van-cell-group>
+            <!-- <input wx:for="{{12}}" wx:key='num' class="td" placeholder="data"></input> -->
+        </view>
+        <view class="tr">
+            <view  wx:for="{{17}}" wx:key='index' class="td">
+              <view wx:if="{{index==0}}">序号</view>
+              <view wx:else>{{index+16}}</view>
+            </view>
+         </view>
+        <view class="tr" wx:for="{{datalist}}"  wx:key='now'>
+            <view class="td">{{item.name}}</view>
+            <van-cell-group wx:for="{{item.num}}" wx:for-item="cell" class="td">
+              <van-rate 
+                wx:if="{{item.type==0}}"
+                data-name="{{'1,'+item.name+','+cell}}"
+                value="{{ mydata[item.pos][cell+16] }}"
+                count="{{3}}"
+                icon="star"
+                void-icon="star-o"
+                bind:change="onChange"
+                class="td rank"
+                size="15"
+              />
+              <van-field
+                bindinput="onChange"
+                data-name="{{'1,'+item.name+','+cell}}"
+                value="{{ mydata[item.pos][cell+16] }}"
+                wx:else
+                clearable
+                required
+              />
+            </van-cell-group>
+            <!-- <input wx:for="{{12}}" wx:key='num' class="td" placeholder="data"></input> -->
+        </view>
+     </view>
+     <view class="margin-up">
+        <van-button color="#38a3f5" plain class="register" id="register-button" catchtap="output">提交</van-button>
+    </view>
+</view>
