@@ -1,0 +1,9 @@
+/* pages/login/login.wxss */
+.login {
+    margin-right: 100rpx;
+}
+
+.register {
+    margin-left: 150rpx;
+    right: 0;
+}

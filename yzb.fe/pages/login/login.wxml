@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="margin-bottom-large">
+        <van-cell-group>
+            <van-field
+                value="{{ username }}"
+                label="ID"
+                placeholder="请输入ID"
+                clearable
+                right-icon="question-o"
+                right-icon-class="custom-icon"
+                required
+                bind:click-icon="onClickIcon"
+                bindinput="inputName"
+            />
+            <van-field
+                value="{{ password }}"
+                type="password"
+                label="密码"
+                placeholder="请输入密码"
+                required
+                border="{{ false }}"
+                bindinput="inputPassword"
+            />
+        </van-cell-group>
+    </view>
+    <view class="margin-up">
+        <van-button color="#38a3f5" plain class="login" id="login-button" catchtap="login">登   陆</van-button>
+        <van-button color="#38a3f5" plain class="register" id="register-button" catchtap="register">注   册</van-button>
+    </view>
+</view>

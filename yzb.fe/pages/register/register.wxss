@@ -1,0 +1,27 @@
+/* pages/register/register.wxss */
+.register {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+.demo-radio-group {
+    /* padding: 0 200rpx; */
+    margin-left: 200rpx;
+  }
+
+.demo-radio {
+    margin-bottom: 10px;
+}
+  
+.icon {
+    width: 20px;
+}
+
+.van-radio {
+    margin-left: 50rpx;
+}
