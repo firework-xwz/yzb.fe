@@ -80,6 +80,18 @@ Page({
     console.log(this.data.mydata);
   },
   output:function(){
-    console.log(this.data.datalist)
+    console.log(this.data.datalist);
+    wx.showModal({
+      title: '提示',
+      content: '提交成功',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else {
+          console.log('用户点击取消')
+        }
+
+      }
+    })
   }
 })

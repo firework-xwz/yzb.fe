@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  viewexam:function(){
+    wx.navigateTo({
+      url: '../exam/exam'
+    })
   }
 })

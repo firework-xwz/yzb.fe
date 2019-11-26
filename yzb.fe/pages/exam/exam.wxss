@@ -20,3 +20,13 @@
     line-height: 4rem;
     color: black
 }
+
+.line-left::after{
+  content: "";
+  width:1rpx;
+  height: 30rpx;
+  background: black;
+  position: absolute;
+  top: 13rpx;
+  left: 80rpx;
+}

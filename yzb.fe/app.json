@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/exam-view/exam-view",
     "pages/login/login",
     "pages/register/register",
-    "pages/exam-info/exam-info",
     "pages/exam/exam",
+    "pages/index/index",
+    "pages/exam-info/exam-info",
     "pages/exam-log/exam-log",
-    "pages/exam-view/exam-view",
+    
     "pages/info/info",
     "pages/logs/logs"
   ],

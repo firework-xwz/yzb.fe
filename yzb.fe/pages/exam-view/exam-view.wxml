@@ -1,2 +1,42 @@
-<!--pages/exam-view/exam-view.wxml-->
-<text>pages/exam-view/exam-view.wxml</text>
+<view class="page-wrapper ">
+    <view class="bus-list js_bus_list ">
+      <view data-supplierid="100020" data-key="" class="bus-list-item  ">
+        <view class="bus-time"> 08:25</view>
+       <view class="tobooking" catchtap="viewexam"> 查看 </view>
+        <view class="detail">
+          <view class="detail1">
+            <view class="start">
+              <text class="icon-circle s-icon1"></text>同济大学校医院</view>
+           <view class="end">
+             <text class="icon-circle s-icon2"></text>上海市杨浦区</view>
+         </view>
+         <view class="tags">
+         <view>
+         2019/11/10
+         </view>
+         </view>
+       </view>
+     </view>
+  </view>
+
+  <view class="bus-list js_bus_list ">
+      <view data-supplierid="100020" data-key="" class="bus-list-item  ">
+        <view class="bus-time"> 15:32</view>
+       <view class="tobooking" catchtap="viewexam"> 查看 </view>
+        <view class="detail">
+          <view class="detail1">
+            <view class="start">
+              <text class="icon-circle s-icon1"></text>同济大学嘉定校区校医院</view>
+           <view class="end">
+             <text class="icon-circle s-icon2"></text>上海市嘉定区</view>
+         </view>
+         <view class="tags">
+         <view>
+         2019/10/23
+         </view>
+         </view>
+       </view>
+     </view>
+  </view>
+ 
+  </view>

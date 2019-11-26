@@ -1,5 +1,5 @@
 <!--pages/register/register.wxml-->
-<view>
+<view class="Form">
     <van-cell-group class="margin-bottom">
         <van-field
         value="{{ id }}"
